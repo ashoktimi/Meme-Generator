@@ -1,0 +1,86 @@
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: Lato;
+}
+p{
+    text-align: center;
+    font-family: Oswald;
+    font-size: 20px;
+}
+.memeform{
+    max-width: 1300px;
+    margin: 2rem auto;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.mydiv .meme {
+    width: 100%;
+}
+.mydiv{
+    width: 70%;
+    height: 500px;
+    border: 2px solid red;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+.meme{
+
+    height: 300px;
+    max-width: 200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    top:  15px;
+    padding-left: 15px;
+}
+.top{
+
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: Oswald;
+    position: absolute;
+    z-index: 2;
+    top: 20px ;
+    left: 30px ;
+}
+.bottom{
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: Oswald;
+    position: absolute;
+    z-index: 2;
+    top: 260px;
+    left: 30px;
+}
+
+#url{
+    width: 80%;
+    height: 20px; 
+    float: right;
+}
+#text1, #text2{
+    width: 80%;
+    height: 20px;
+    float: right;
+}
+#urlstyle{
+    margin-top: 1rem;
+}
+::placeholder{
+    font-family: Oswald;
+    font-size: 15px;
+}
+.textlabel{
+    font-family: Oswald;
+    font-size: 15px;
+    margin-right: 10px;    
+}
+div.submit{    
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
