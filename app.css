@@ -22,7 +22,7 @@ p{
 .mydiv{
     width: 70%;
     height: 500px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 0 auto;
     position: relative;
     top: 100px;
