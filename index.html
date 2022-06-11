@@ -19,20 +19,20 @@
     <h1>I CAN HAZ MEMEZ?</h1>
     <p>Fill out form to start creating memes!</p>
     <form class="memeform">
-        <div id="urlstyle">
+        <div class="textinput">
             <label for="url" class="textlabel">Image URL</label>                      
-            <input type="url" name="url" id="url" required
+            <input class="inputText" type="url" name="url" id="url" required
             placeholder="what's the URL for your meme image?" 
             pattern="https://.*"  list="defaultURLs">
         </div> 
         <div class="textinput">
             <label for="text" class="textlabel">Text On Top</label>
-            <input type="text" name="text1" id="text1" required
+            <input class="inputText" type="text" name="text1" id="text1" required
             placeholder="(Optional) What text do you want at the top of the meme?">
         </div>
         <div class="textinput">
             <label for="text" class="textlabel">Text On Bottom</label>
-            <input type="text" name="text2" id="text2" required
+            <input class="inputText" type="text" name="text2" id="text2" required
             placeholder="(Optional) What text do you want at the bottom of the meme?">                
         </div>
         <br>
@@ -41,9 +41,8 @@
             <input type="submit" name="submit" value="Add Meme" >
         </div>
     </form>
- 
-    <div class="mydiv"></div>
 
+    <div class="mydiv"></div>
 
 
     <script src="script.js"></script>

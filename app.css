@@ -12,8 +12,13 @@ p{
 .memeform{
     max-width: 1300px;
     margin: 2rem auto;
-    border: 2px solid black;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .8rem;
 }
 
 .mydiv .meme {
@@ -22,65 +27,87 @@ p{
 .mydiv{
     width: 70%;
     height: 500px;
-    /* border: 2px solid red; */
     margin: 0 auto;
-    position: relative;
-    top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
 }
-.meme{
-
+.newDiv{
+    margin: 10px;
+    width: 300px;
     height: 300px;
-    max-width: 200px;
-    margin: 0 auto;
     position: relative;
-    z-index: 1;
-    top:  15px;
-    padding-left: 15px;
 }
-.top{
 
-    font-size: 30px;
-    font-weight: 1000;
-    font-family: Oswald;
+.meme{
+    height: 300px;
+    max-width: 300px;
+    position: absolute;    
+}
+.top{  
+  
     position: absolute;
-    z-index: 2;
     top: 20px ;
-    left: 30px ;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 800;
+    text-shadow: 1px 1px 2px black;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+
 }
 .bottom{
-    font-size: 30px;
-    font-weight: 1000;
-    font-family: Oswald;
+   
     position: absolute;
-    z-index: 2;
-    top: 260px;
-    left: 30px;
+    top: 240px ;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 800;
+    text-shadow: 1px 1px 2px black;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
 }
 
-#url{
-    width: 80%;
-    height: 20px; 
-    float: right;
-}
-#text1, #text2{
-    width: 80%;
-    height: 20px;
-    float: right;
-}
-#urlstyle{
-    margin-top: 1rem;
-}
 ::placeholder{
     font-family: Oswald;
     font-size: 15px;
 }
-.textlabel{
-    font-family: Oswald;
+
+.submit [name]{
+    background-color: rgb(0, 132, 255);
+    padding: 5px;
+    border: none;
+    border-radius: .3em; 
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    width: auto;
+}
+
+.submit{  
+    
+    margin-left: 84%; 
+
+}
+
+.textinput{
     font-size: 15px;
-    margin-right: 10px;    
-}
-div.submit{    
+    font-family: Oswald;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 15px;
+    flex-grow: 1;
+    justify-content:flex-start;
+    margin-top: 4px;
+    align-items: center;
 }
+.textinput label{
+    padding-left: 60px;
+    width: 15%;
+}
+.textinput input{
+width: 70%;
+}
+
